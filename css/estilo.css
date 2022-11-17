@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /*ESTILOS GENERALES*/
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: rgba(12, 1, 31, 0.9960784314);
+  color: #ff7bed;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/*HEADER*/
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  height: 10rem;
+}
+.encabezado .tituloPrincipal {
+  text-decoration: none;
+  color: #ff7bed;
+  font-size: 3rem;
+}
+.encabezado .tituloPrincipal i {
+  font-size: 3rem;
+  color: #0084ff;
+}
+.encabezado .tituloPrincipal h1 {
+  display: inline-block;
+  color: #ff7bed;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.encabezado ul {
+  display: flex;
+  list-style-type: none;
+}
+.encabezado ul li {
+  margin-right: 1.5rem;
+}
+.encabezado ul li a {
+  text-decoration: none;
+  color: #ff7bed;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+.encabezado ul li a:hover {
+  color: rgb(255, 76, 231);
+}
+
+/*HERO*/
+.hero {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0084ff;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hero p {
+  color: rgb(255, 76, 231);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.hero a {
+  background-color: #0084ff;
+  text-decoration: none;
+  color: #ff7bed;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.hero a:hover {
+  background-color: rgba(0, 140, 255, 0.7019607843);
+}
+
+.introGaleria {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0084ff;
+  margin-bottom: 3rem;
+}
+.introGaleria h2 {
+  color: #ff7bed;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imagenGaleria {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  filter: grayscale(50%);
+}
+.imagenGaleria:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+}
+
+@media (max-width: 767px) {
+  .imagenGaleria {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal {
+    display: none;
+  }
+  .introGaleria {
+    display: none;
+  }
+}
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.burbuja {
+  display: flex;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 250%;
+  border: 5px double;
+  border-color: rgba(0, 140, 255, 0.7019607843);
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=estilo.css.map */
